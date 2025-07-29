@@ -1,2 +1,2 @@
-# retro_futuristic_portfolio
-Portfolio website in retro futuristic style
+## Retro futuristic portfolio
+My portfolio in retro futuristic style
