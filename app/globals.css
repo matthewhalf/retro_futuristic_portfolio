@@ -1,15 +1,19 @@
 @import "tailwindcss";
 
 :root {
-    --bg : #252724;
-    --text : #D9CEBF;
+    --bg : #000000;
+    --text : #ffff;
 }
 
 body {
   font-family: var(--font-jetbrains-mono), monospace;
 }
 
-h1 {
-   font-size: 4rem;
-   font-weight: 800;
+h3 {
+    font-family: var(--font-vt323);
+    color:#fff
+}
+
+p {
+    color:var(--text);
 }

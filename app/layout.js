@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={jetBrainsMono.variable}>
+    <html lang="en" className={`${jetBrainsMono.variable}`}>
       <body className="antialiased text[var(--text)] bg-[var(--bg)] min-h-screen ">
         {children}
       </body>
