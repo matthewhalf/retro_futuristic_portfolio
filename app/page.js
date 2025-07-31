@@ -1,9 +1,9 @@
 import DecryptedText from "./components/DecryptedText";
 import Dock from "./components/Dock";
 import { VscCallIncoming, VscCode, VscAccount } from "react-icons/vsc";
-import ScrollVelocity from "./components/ScrollVelocity";
 import RippleGrid from "./components/RippleGrid";
-import CardSwap, { Card } from './components/CardSwap'
+import ScrollStack, { ScrollStackItem } from './components/ScrollStack'
+
 
 export default function Home() {
     const items = [
@@ -13,13 +13,6 @@ export default function Home() {
   ];
   return (
     <>
-    <ScrollVelocity
-    texts={['Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet']}
-    velocity={40}
-    className="custom-scroll-text"
-    scrollerClassName="w-full"
-    />
-
    <div className="relative w-full h-screen flex flex-col items-center justify-center text-center">
         <div className="absolute top-0 left-0 w-full h-full -z-10">
 
@@ -43,47 +36,41 @@ export default function Home() {
             revealDirection="center"
             speed="200"
             maxIterations="30"
-            className="text-[4rem] text-[var(--text)] mt-20"
-            encryptedClassName="text-[4rem] text-[var(--text)] mt-20"
-            parentClassName="text-[4rem] text-[var(--text)] mt-20"
+            className="md:text-[4rem] text-[2rem] text-[var(--text)] mt-20"
+            encryptedClassName="md:text-[4rem] text-[2rem] text-[var(--text)] mt-20"
+            parentClassName=" md:text-[4rem]text-[2rem] text-[var(--text)] mt-20"
         />
 
-        <h3 className="text-[1.5rem] text-white">Web dev && designer based in Italy</h3>
+        <h3 className="text-[1rem] text-white">Web dev && designer based in Italy</h3>
     </div>
 
-    <div className="w-full h-screen relative flex gap-20 justify-center items-center text-center">
-        <div className="md:w-[40%]">
-            <h3 className="text-white md:text-[5rem] text-[2rem]">Chi sono </h3>
-            <p  className="text-white text-lg">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsum</p>
-        </div>
-        <CardSwap
-        cardDistance={60}
-        verticalDistance={70}
-        delay={3000}
-        pauseOnHover={false}
-    >
-            <Card>
-            <h3 className="border-b-1">Card 1</h3>
-            <p className="mt-2">Your content here Your content hereYour content hereYour content hereYour content hereYour content hereYour content hereYour content hereYour content hereYour content here</p>
-            </Card>
-            <Card>
-            <h3 className="border-b-1">Card 2</h3>
-           <p className="mt-2">Your content here Your content hereYour content hereYour content hereYour content hereYour content hereYour content hereYour content hereYour content hereYour content here</p>
-            </Card>
-            <Card>
-            <h3 className="border-b-1">Card 3</h3>
-            <p className="mt-2">Your content here Your content hereYour content hereYour content hereYour content hereYour content hereYour content hereYour content hereYour content hereYour content here</p>
-            </Card>
-    </CardSwap>
 
+     <div className="w-full min-h-screen flex flex-col items-center justify-center pt-40">
+        <ScrollStack>
+            <ScrollStackItem>
+            <h2>Card 1</h2>
+            <p>This is the first card in the stack</p>
+            </ScrollStackItem>
+            <ScrollStackItem>
+            <h2>Card 2</h2>
+            <p>This is the second card in the stack</p>
+            </ScrollStackItem>
+            <ScrollStackItem>
+            <h2>Card 3</h2>
+            <p>This is the third card in the stack</p>
+            </ScrollStackItem>
+        </ScrollStack>
     </div>
+
+
+
 
         <Dock
             items={items}
             panelHeight={68}
             baseItemSize={50}
             magnification={70}
-            className="fixed bottom-0 mb-3"
+            className="fixed bottom-0 mb-3 bg-black"
         />
     </>
   );
