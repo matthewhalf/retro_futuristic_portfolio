@@ -2,18 +2,9 @@
 
 :root {
     --bg : #000000;
-    --text : #ffff;
+    --text : #fff;
 }
 
 body {
   font-family: var(--font-jetbrains-mono), monospace;
-}
-
-h3 {
-    font-family: var(--font-vt323);
-    color:#fff
-}
-
-p {
-    color:var(--text);
 }
