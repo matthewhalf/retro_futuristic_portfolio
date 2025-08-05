@@ -124,7 +124,7 @@ const AnimatedList = ({
             >
               <p
                 className={`w-full md:text-left text-sm font-semibold uppercase mb-1 ${
-                  selectedIndex === index ? 'text-black' : 'text-[#aaaa]'
+                  selectedIndex === index ? 'text-black' : 'text-[#ffff]'
                 }`}
               >
                 {item.project}

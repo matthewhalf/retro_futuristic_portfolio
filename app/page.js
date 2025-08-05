@@ -155,10 +155,10 @@ export default function Home() {
         <div className="absolute top-0 left-0 w-full h-full -z-10">
             <Particles
                 particleColors={['#ffffff', '#ffffff']}
-                particleCount={200}
+                particleCount={250}
                 particleSpread={10}
                 speed={0.2}
-                particleBaseSize={100}
+                particleBaseSize={150}
                 moveParticlesOnHover={true}
                 alphaParticles={true}
                 disableRotation={false}

@@ -157,7 +157,6 @@ export default function Dock({
             baseItemSize={baseItemSize}
           >
             <DockIcon>{item.icon}</DockIcon>
-            <DockLabel>{item.label}</DockLabel>
           </DockItem>
         ))}
       </motion.div>
