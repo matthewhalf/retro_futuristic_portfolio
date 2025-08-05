@@ -54,10 +54,10 @@ export default function Home() {
             animateOn="view"
             revealDirection="center"
             speed="200"
-            maxIterations="30"
-            className="md:text-[4rem] text-[2rem] text-[var(--text)] mt-20"
-            encryptedClassName="md:text-[4rem] text-[2rem] text-[var(--text)] mt-20"
-            parentClassName=" md:text-[4rem]text-[2rem] text-[var(--text)] mt-20"
+            maxIterations="20"
+            className="md:text-[4rem] text-[2rem] text-[var(--text)]"
+            encryptedClassName="md:text-[4rem] text-[2rem] text-[var(--text)] "
+            parentClassName=" md:text-[4rem]text-[2rem] text-[var(--text)] "
         />
 
         <h3 className="text-[.8rem] md:text-[1rem]  text-[#aaaa] uppercase">[Web dev && designer based in Italy]</h3>
