@@ -7,4 +7,5 @@
 
 body {
   font-family: var(--font-jetbrains-mono), monospace;
+  scroll-behavior: smooth !important;
 }

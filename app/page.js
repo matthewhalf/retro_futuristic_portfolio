@@ -8,11 +8,19 @@ import AnimatedList from "./components/AnimatedList";
 import Particles from "./components/Particles";
 
 export default function Home() {
-    const items = [
-    { icon: <VscAccount size={18} className="text-white" />, label: '[about me]' },
-    { icon: <VscCode size={18} className="text-white" />, label: '[projects]' },
-    { icon: <VscCallIncoming size={18} className="text-white" />, label: '[contacts]'  },
-    ];
+    const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+
+   const items = [
+    { icon: <VscAccount size={18} className="text-white" />, label: '[about me]', onClick: () => scrollToSection('about') },
+    { icon: <VscCode size={18} className="text-white" />, label: '[projects]', onClick: () => scrollToSection('projects') },
+    { icon: <VscCallIncoming size={18} className="text-white" />, label: '[contacts]', onClick: () => scrollToSection('contacts') },
+  ];
 
     const projects = [
     { project: 'eiscafedolomiti', category: 'wordpress, elementor', url: 'https://www.eiscafedolomiti.eu'},
@@ -30,13 +38,13 @@ export default function Home() {
             <RippleGrid
                 enableRainbow={false}
                 gridColor="#aaaa"
-                rippleIntensity={0.17}
+                rippleIntensity={0.20}
                 gridSize={15}
                 gridThickness={30}
                 mouseInteraction={true}
                 mouseInteractionRadius={1.2}
                 opacity={0.2}
-                fadeDistance={1}
+                fadeDistance={3}
             />
 
         </div>
@@ -56,25 +64,94 @@ export default function Home() {
     </div>
 
 
-     <div className="w-full flex flex-col items-center justify-center pt-40">
+     <div className="w-full  flex flex-col items-center justify-center pt-10" id="about">
         <h2 className="text-[2rem] text-[#aaaa] uppercase">[About me]</h2>
         <ScrollStack>
             <ScrollStackItem>
-            <p>Breve descrizione su chi sono</p>
+            <h3 className="text-lg text-white pb-2">Who_am_i</h3>
+            <p>I'm a passionate web developer and designer with a strong focus on building custom WordPress websites tailored to client needs. With a solid background in PHP, HTML, CSS, Tailwind CSS, and JavaScript, I specialize in creating responsive, accessible, and performance-optimized digital experiences.
+            </p>
             </ScrollStackItem>
             <ScrollStackItem>
-            <p>Skills e competenze</p>
-            </ScrollStackItem>
-            <ScrollStackItem>
-            <p>bho</p>
+            <h3 className="text-lg text-white pb-2">Skills</h3>
+            <div className="flex gap-2 justify-center items-center">
+                <p>[Html]</p>
+                <div class="flex gap-1">
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                </div>
+                <p>5/5</p>
+            </div>
+
+             <div className="flex gap-2 justify-center items-center">
+                <p>[CSS]</p>
+                <div class="flex gap-1">
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                </div>
+                <p>5/5</p>
+            </div>
+
+            <div className="flex gap-2 justify-center items-center">
+                <p>[JS]</p>
+                <div class="flex gap-1">
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-700"></div>
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-700"></div>
+                </div>
+                <p>3/5</p>
+            </div>
+
+            <div className="flex gap-2 justify-center items-center">
+                <p>[PHP]</p>
+                <div class="flex gap-1">
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-700"></div>
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-700"></div>
+                </div>
+                <p>3/5</p>
+            </div>
+
+            <div className="flex gap-2 justify-center items-center">
+                <p>[Tw]</p>
+                <div class="flex gap-1">
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                </div>
+                <p>5/5</p>
+            </div>
+
+              <div className="flex gap-2 justify-center items-center">
+                <p>[NextJS]</p>
+                <div class="flex gap-1">
+                    <div class="h-2 md:w-20 w-6 bg-neutral-500"></div>
+                    <div class="h-2 md:w-20 w-6 bg-neutral-500"></div>
+                    <div class="h-2 md:w-20 w-6 bg-neutral-700"></div>
+                    <div class="h-2 md:w-20 w-6 bg-neutral-700"></div>
+                    <div class="h-2 md:w-20 w-6 bg-neutral-700"></div>
+                </div>
+                <p>2/5</p>
+            </div>
             </ScrollStackItem>
         </ScrollStack>
     </div>
 
 
 
-    <div className="relative w-full h-screen flex flex-col items-center justify-center text-center">
-
+    <div className="relative w-full md:min-h-screen flex flex-col items-center justify-center text-center" id="projects">
         <div className="absolute top-0 left-0 w-full h-full -z-10">
             <Particles
                 particleColors={['#ffffff', '#ffffff']}
@@ -88,7 +165,7 @@ export default function Home() {
             />
         </div>
 
-        <h2 className="text-[2rem] text-[#aaaa] uppercase">[Projects]</h2>
+        <h2 className="text-[2rem] text-[#aaaa] uppercase md:pt-20 pt-10">[Projects]</h2>
             <AnimatedList
             items={projects}
             onItemSelect={(item, index) => console.log(item, index)}
@@ -96,10 +173,12 @@ export default function Home() {
             enableArrowNavigation={false}
             displayScrollbar={false}
             />
+
+        <h2 className="text-[2rem] text-[#aaaa] uppercase mt-20" id="contacts">[Contacts]</h2>
+
+        <a href="mailto:info@matthewdev.it"><p className="text-2xl text-center text-white mt-5 pb-20">info@matthewdev.it</p></a>
+
     </div>
-
-
-
 
         <Dock
             items={items}

@@ -92,7 +92,7 @@ const AnimatedList = ({
   }, [selectedIndex, keyboardNav]);
 
   return (
-    <div className={`relative md:w-[80%] w-full pb-[10rem] mt-2 ${className}`}>
+    <div className={`relative md:w-[80%] w-full md:pb-[10rem] mt-2 ${className}`}>
       <div
         ref={listRef}
         className={`overflow-y-auto p-4 ${
