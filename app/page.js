@@ -39,12 +39,12 @@ export default function Home() {
                 enableRainbow={false}
                 gridColor="#aaaa"
                 rippleIntensity={0.20}
-                gridSize={15}
-                gridThickness={30}
+                gridSize={20}
+                gridThickness={10}
                 mouseInteraction={true}
                 mouseInteractionRadius={1.2}
                 opacity={0.2}
-                fadeDistance={3}
+                fadeDistance={5}
             />
 
         </div>
