@@ -17,9 +17,9 @@ export default function Home() {
 
 
    const items = [
-    { icon: <VscAccount size={18} className="text-white" />, label: '[about me]', onClick: () => scrollToSection('about') },
-    { icon: <VscCode size={18} className="text-white" />, label: '[projects]', onClick: () => scrollToSection('projects') },
-    { icon: <VscCallIncoming size={18} className="text-white" />, label: '[contacts]', onClick: () => scrollToSection('contacts') },
+    { icon: <VscAccount size={18} classNameName="text-white" />, label: '[about me]', onClick: () => scrollToSection('about') },
+    { icon: <VscCode size={18} classNameName="text-white" />, label: '[projects]', onClick: () => scrollToSection('projects') },
+    { icon: <VscCallIncoming size={18} classNameName="text-white" />, label: '[contacts]', onClick: () => scrollToSection('contacts') },
   ];
 
     const projects = [
@@ -32,8 +32,8 @@ export default function Home() {
 
   return (
     <>
-   <div className="relative w-full h-screen flex flex-col items-center justify-center text-center">
-        <div className="absolute top-0 left-0 w-full h-full -z-10">
+   <div classNameName="relative w-full h-screen flex flex-col items-center justify-center text-center">
+        <div classNameName="absolute top-0 left-0 w-full h-full -z-10">
 
             <RippleGrid
                 enableRainbow={false}
@@ -55,93 +55,93 @@ export default function Home() {
             revealDirection="center"
             speed="200"
             maxIterations="20"
-            className="md:text-[4rem] text-[2rem] text-[var(--text)]"
-            encryptedClassName="md:text-[4rem] text-[2rem] text-[var(--text)] "
-            parentClassName=" md:text-[4rem]text-[2rem] text-[var(--text)] "
+            classNameName="md:text-[4rem] text-[2rem] text-[var(--text)]"
+            encryptedclassNameName="md:text-[4rem] text-[2rem] text-[var(--text)] "
+            parentclassNameName=" md:text-[4rem]text-[2rem] text-[var(--text)] "
         />
 
-        <h3 className="text-[.8rem] md:text-[1rem]  text-[#aaaa] uppercase">[Web dev && designer based in Italy]</h3>
+        <h3 classNameName="text-[.8rem] md:text-[1rem]  text-[#aaaa] uppercase">[Web dev && designer based in Italy]</h3>
     </div>
 
 
-     <div className="w-full  flex flex-col items-center justify-center pt-10" id="about">
-        <h2 className="text-[2rem] text-[#aaaa] uppercase">[About me]</h2>
+     <div classNameName="w-full  flex flex-col items-center justify-center pt-10" id="about">
+        <h2 classNameName="text-[2rem] text-[#aaaa] uppercase">[About me]</h2>
         <ScrollStack>
             <ScrollStackItem>
-            <h3 className="text-lg text-white pb-2">Whoami</h3>
+            <h3 classNameName="text-lg text-white pb-2">Whoami</h3>
             <p>I&apos;m a passionate web developer and designer with a strong focus on building custom WordPress websites tailored to client needs. With a solid background in PHP, HTML, CSS, Tailwind CSS, and JavaScript, I specialize in creating responsive, accessible, and performance-optimized digital experiences.
             </p>
             </ScrollStackItem>
             <ScrollStackItem>
-            <h3 className="text-lg text-white pb-2">Skills</h3>
-            <div className="flex gap-2 justify-center items-center">
+            <h3 classNameName="text-lg text-white pb-2">Skills</h3>
+            <div classNameName="flex gap-2 justify-center items-center">
                 <p>[Html]</p>
-                <div class="flex gap-1">
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                <div classNameName="flex gap-1">
+                    <div classNameName="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div classNameName="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div classNameName="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div classNameName="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div classNameName="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
                 </div>
                 <p>5/5</p>
             </div>
 
-             <div className="flex gap-2 justify-center items-center">
+             <div classNameName="flex gap-2 justify-center items-center">
                 <p>[CSS]</p>
-                <div class="flex gap-1">
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                <div className="flex gap-1">
+                    <div className="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div className="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div className="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div className="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div className="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
                 </div>
                 <p>5/5</p>
             </div>
 
-            <div className="flex gap-2 justify-center items-center">
+            <div classNameName="flex gap-2 justify-center items-center">
                 <p>[JS]</p>
-                <div class="flex gap-1">
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-700"></div>
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-700"></div>
+                <div className="flex gap-1">
+                    <div className="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div className="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div className="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div className="h-2 md:w-20 w-6 flex-1 bg-neutral-700"></div>
+                    <div className="h-2 md:w-20 w-6 flex-1 bg-neutral-700"></div>
                 </div>
                 <p>3/5</p>
             </div>
 
-            <div className="flex gap-2 justify-center items-center">
+            <div classNameName="flex gap-2 justify-center items-center">
                 <p>[PHP]</p>
-                <div class="flex gap-1">
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-700"></div>
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-700"></div>
+                <div className="flex gap-1">
+                    <div className="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div className="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div className="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div className="h-2 md:w-20 w-6 flex-1 bg-neutral-700"></div>
+                    <div className="h-2 md:w-20 w-6 flex-1 bg-neutral-700"></div>
                 </div>
                 <p>3/5</p>
             </div>
 
-            <div className="flex gap-2 justify-center items-center">
+            <div classNameName="flex gap-2 justify-center items-center">
                 <p>[Tw]</p>
-                <div class="flex gap-1">
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
-                    <div class="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                <div className="flex gap-1">
+                    <div className="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div className="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div className="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div className="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
+                    <div className="h-2 md:w-20 w-6 flex-1 bg-neutral-500"></div>
                 </div>
                 <p>5/5</p>
             </div>
 
-              <div className="flex gap-2 justify-center items-center">
+              <div classNameName="flex gap-2 justify-center items-center">
                 <p>[NextJS]</p>
-                <div class="flex gap-1">
-                    <div class="h-2 md:w-20 w-6 bg-neutral-500"></div>
-                    <div class="h-2 md:w-20 w-6 bg-neutral-500"></div>
-                    <div class="h-2 md:w-20 w-6 bg-neutral-700"></div>
-                    <div class="h-2 md:w-20 w-6 bg-neutral-700"></div>
-                    <div class="h-2 md:w-20 w-6 bg-neutral-700"></div>
+                <div className="flex gap-1">
+                    <div className="h-2 md:w-20 w-6 bg-neutral-500"></div>
+                    <div className="h-2 md:w-20 w-6 bg-neutral-500"></div>
+                    <div className="h-2 md:w-20 w-6 bg-neutral-700"></div>
+                    <div className="h-2 md:w-20 w-6 bg-neutral-700"></div>
+                    <div className="h-2 md:w-20 w-6 bg-neutral-700"></div>
                 </div>
                 <p>2/5</p>
             </div>
@@ -151,8 +151,8 @@ export default function Home() {
 
 
 
-    <div className="relative w-full md:min-h-screen flex flex-col items-center justify-center text-center" id="projects">
-        <div className="absolute top-0 left-0 w-full h-full -z-10">
+    <div classNameName="relative w-full md:min-h-screen flex flex-col items-center justify-center text-center" id="projects">
+        <div classNameName="absolute top-0 left-0 w-full h-full -z-10">
             <Particles
                 particleColors={['#ffffff', '#ffffff']}
                 particleCount={250}
@@ -165,7 +165,7 @@ export default function Home() {
             />
         </div>
 
-        <h2 className="text-[2rem] text-[#aaaa] uppercase md:pt-20 pt-10">[Projects]</h2>
+        <h2 classNameName="text-[2rem] text-[#aaaa] uppercase md:pt-20 pt-10">[Projects]</h2>
             <AnimatedList
             items={projects}
             onItemSelect={(item, index) => console.log(item, index)}
@@ -174,9 +174,9 @@ export default function Home() {
             displayScrollbar={false}
             />
 
-        <h2 className="text-[2rem] text-[#aaaa] uppercase mt-20" id="contacts">[Contacts]</h2>
+        <h2 classNameName="text-[2rem] text-[#aaaa] uppercase mt-20" id="contacts">[Contacts]</h2>
 
-        <a href="mailto:info@matthewdev.it"><p className="text-2xl text-center text-white mt-5 pb-20">info@matthewdev.it</p></a>
+        <a href="mailto:info@matthewdev.it"><p classNameName="text-2xl text-center text-white mt-5 pb-20">info@matthewdev.it</p></a>
 
     </div>
 
@@ -185,7 +185,7 @@ export default function Home() {
             panelHeight={68}
             baseItemSize={50}
             magnification={70}
-            className="fixed bottom-0 mb-3 bg-black"
+            classNameName="fixed bottom-0 mb-3 bg-black"
         />
     </>
   );
