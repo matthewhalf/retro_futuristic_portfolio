@@ -69,7 +69,7 @@ export default function Home() {
         <ScrollStack>
             <ScrollStackItem>
             <h3 className="text-lg text-white pb-2">Who_am_i</h3>
-            <p>I'm a passionate web developer and designer with a strong focus on building custom WordPress websites tailored to client needs. With a solid background in PHP, HTML, CSS, Tailwind CSS, and JavaScript, I specialize in creating responsive, accessible, and performance-optimized digital experiences.
+            <p>I&apos;m a passionate web developer and designer with a strong focus on building custom WordPress websites tailored to client needs. With a solid background in PHP, HTML, CSS, Tailwind CSS, and JavaScript, I specialize in creating responsive, accessible, and performance-optimized digital experiences.
             </p>
             </ScrollStackItem>
             <ScrollStackItem>
