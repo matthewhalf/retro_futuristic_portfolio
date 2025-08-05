@@ -50,7 +50,7 @@ export default function Home() {
         </div>
 
         <DecryptedText
-            text="Hi, im Matthew"
+            text="Hi, i'm Matthew"
             animateOn="view"
             revealDirection="center"
             speed="200"
