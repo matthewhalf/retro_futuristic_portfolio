@@ -6,20 +6,6 @@ export default function About(){
     return (
         <div className="w-full  flex flex-col items-center justify-center pt-10" id="about">
 
-        <div className="absolute top-0 min-h-screen w-full h-full -z-10">
-            <Particles
-                particleColors={['#ffffff', '#ffffff']}
-                particleCount={220}
-                particleSpread={10}
-                speed={0.2}
-                particleBaseSize={150}
-                moveParticlesOnHover={true}
-                alphaParticles={true}
-                disableRotation={false}
-            />
-        </div>
-
-
          <div className="absolute min-h-screen w-full h-full -z-10">
             <Particles
                 particleColors={['#ffffff', '#ffffff']}
