@@ -8,6 +8,7 @@ export default function Projects() {
         { project: 'music show time', category: 'nextJS, spoty-api, tailwind', url: 'https://music-show-time.vercel.app'},
         { project: 'modern portfolio', category: 'nextJS, tailwind', url: 'https://matthewhalf.vercel.app'},
         { project: '3d portfolio', category: 'nextJS, threejs, tailwind', url: 'https://firstdev.vercel.app'},
+        { project: 'custom wordpress theme', category: 'wordpress, PHP, tailwind', url: 'https://github.com/matthewhalf/first_child'},
         ];
 
     return (
