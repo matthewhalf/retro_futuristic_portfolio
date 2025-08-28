@@ -1,5 +1,7 @@
 import AnimatedList from "./ui/AnimatedList";
 import Particles from "./ui/Particles";
+import { BsLinkedin } from "react-icons/bs";
+import { FaGithubSquare } from "react-icons/fa";
 
 export default function Projects() {
     const projects = [
@@ -37,7 +39,10 @@ export default function Projects() {
 
         <h2 className="text-[2rem] text-[#aaaa] uppercase mt-20" id="contacts">[Contacts]</h2>
 
-        <a href="mailto:info@matthewdev.it"><p className="text-2xl text-center text-white mt-5 pb-20">info@matthewdev.it</p></a>
+        <div className="flex gap-6">
+            <a href="https://it.linkedin.com/in/matteo-mezzatesta-9b1829289?trk=people-guest_people_search-card" target="_blank"><BsLinkedin size={40} className="mt-4 mb-12" /></a>
+            <a href="https://github.com/matthewhalf" target="_blank"><FaGithubSquare size={48} className="mt-3 mb-12" /></a>
+        </div>
 
     </div>
     )
