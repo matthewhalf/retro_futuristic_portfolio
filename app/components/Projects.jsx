@@ -5,9 +5,9 @@ import { FaGithubSquare } from "react-icons/fa";
 
 export default function Projects() {
     const projects = [
+        { project: 'tvboxd - tv tracker app', category: 'react, tmdb-api, tailwind, supabase', url: 'https://tvboxd.vercel.app'},
         { project: 'eiscafedolomiti', category: 'wordpress, elementor', url: 'https://www.eiscafedolomiti.eu'},
         { project: 'poketrainers', category: 'nextJS, poke-api, tailwind', url: 'https://poketrainers.vercel.app'},
-        { project: 'music show time', category: 'nextJS, spoty-api, tailwind', url: 'https://music-show-time.vercel.app'},
         { project: 'modern portfolio', category: 'nextJS, tailwind', url: 'https://matthewhalf.vercel.app'},
         { project: '3d portfolio', category: 'nextJS, threejs, tailwind', url: 'https://firstdev.vercel.app'},
         { project: 'custom wordpress theme', category: 'wordpress, PHP, tailwind', url: 'https://github.com/matthewhalf/first_child'},

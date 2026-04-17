@@ -1,14 +1,11 @@
 "use client"
 
-import Link from "next/link";
-import { IoArrowBack } from "react-icons/io5";
-
 export default function PrivacyPolicy() {
   return (
     <main className="min-h-screen bg-[var(--bg)] text-[var(--text)] p-8 md:p-24 font-mono">
       <div className="max-w-3xl mx-auto border border-white/10 p-6 md:p-12 relative overflow-hidden bg-black/50 backdrop-blur-sm">
         {/* Retro Grid Background Overlay */}
-        <div className="absolute inset-0 -z-10 opacity-5 pointer-events-none" 
+        <div className="absolute inset-0 -z-10 opacity-5 pointer-events-none"
              style={{backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '20px 20px'}}>
         </div>
 
@@ -104,7 +101,7 @@ export default function PrivacyPolicy() {
               7. Contatti
             </h2>
             <p>
-              Per domande sulla tua privacy o per richiedere la cancellazione dei dati, puoi contattarci all&apos;indirizzo: 
+              Per domande sulla tua privacy o per richiedere la cancellazione dei dati, puoi contattarci all&apos;indirizzo:
               <span className="text-white ml-2 underline underline-offset-4 decoration-white/20">mezzatestamatteo0103@gmail.com</span>
             </p>
           </div>
