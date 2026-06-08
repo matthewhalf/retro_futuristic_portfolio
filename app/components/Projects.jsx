@@ -9,7 +9,6 @@ export default function Projects() {
         { project: 'cineboxd - movie tracker app', category: 'react, tmdb-api, tailwind, supabase', url: 'https://cineboxd.boxdsuite.app/'},
         { project: 'eiscafedolomiti', category: 'wordpress, elementor', url: 'https://www.eiscafedolomiti.eu'},
         { project: 'poketrainers', category: 'nextJS, poke-api, tailwind', url: 'https://poketrainers.vercel.app'},
-        { project: 'modern portfolio', category: 'nextJS, tailwind', url: 'https://matthewhalf.vercel.app'},
         { project: '3d portfolio', category: 'nextJS, threejs, tailwind', url: 'https://firstdev.vercel.app'},
         { project: 'custom wordpress theme', category: 'wordpress, PHP, tailwind', url: 'https://github.com/matthewhalf/first_child'},
         ];
